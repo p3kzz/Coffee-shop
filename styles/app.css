@@ -1,0 +1,358 @@
+:root {
+    --bb: #b6895b;
+    --bg: #010101;
+    --bc: #864e16;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    }
+    
+body {    
+    font-family: 'Poppins', sans-serif;
+    background-color:var(--bg);
+    color: white;
+    }
+
+/* Navbar */
+.Navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7% ;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid #513c28;
+    z-index: 9999;
+}
+
+.Navbar .Navbar-logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    font-style: italic;
+}
+
+.Navbar .Navbar-logo span{
+    color: var(--bb);
+}
+
+.Navbar .Navbar-list a{
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.Navbar .Navbar-list a:hover{
+    color: var(--bb);
+}
+
+.Navbar .Navbar-menu a{
+    color: white;
+}
+
+.Navbar .Navbar-menu a:hover{
+    color: var(--bb);
+}
+
+#hamburger-menu{
+    display: none;
+}
+
+/* konten */
+.content-description{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/espreso.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.content-description::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(1,1,3,1)10%, rgba(255, 255, 255, 0)35%);
+}
+
+.content-description .content{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.content-description .content h1{
+    font-size: 3em;
+    color: white;
+    line-height: 1.2;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.content-description .content h1 span{
+    color: var(--bb);
+}
+
+.content-description .content .Beli{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: white;
+    background-color: var(--bb);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
+}
+
+/* tentang kami */
+.about, 
+.product,
+.kontak {
+    padding: 6rem 7% 1.4rem;
+}
+
+.about h2,
+.product h2,
+.kontak h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about h2 span{
+    color: var(--bc);
+}
+
+.about .content-about{
+    display: flex;
+}
+
+.about .content-about .about-gambar{
+    flex: 1 1 30rem;
+}
+
+.about .content-about .about-gambar img{
+    width: 100%;
+}
+
+.about .content-about .about-content{
+    flex: 1 1 28rem;
+    padding: 0 1rem;
+    margin-top: -0.5rem;
+}
+.about .content-about .about-content h3{
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+    
+}
+
+.about .content-about .about-content p{
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+/* product */
+.product h2,
+.kontak h2{
+    margin-bottom: 1rem;
+}
+
+.product p,
+.kontak p{
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 120;
+    line-height: 1.6;
+}
+
+.product .content-product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.product .content-product .card-product{
+    text-align: center;
+    width: 25%;
+    padding-bottom: 2rem;
+}
+
+.product .content-product .card-product img{
+    border-radius: 50%;
+    width: 50%;
+}
+
+.product .content-product .card-product .card-title{
+    margin: 1rem auto 0.5rem;
+}
+
+/* kontak */
+.kontak .content-kontak{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: #513c28;
+}
+
+.kontak .content-kontak .kontak-img{
+    flex: 1 1 40rem;
+    align-items: center;
+    object-fit: cover;
+}
+
+.kontak .content-kontak .kontak-img img{
+    width: 60%;
+    margin: 2rem 5rem auto;
+}
+
+.kontak .content-kontak .pesan{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    background-color: #664a2d;
+    /* text-align: center; */
+}
+
+.kontak .content-kontak .pesan .input{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+
+.kontak .content-kontak .pesan input{
+    width: 100%;
+    padding: 0;
+    font-size: 1.2rem;
+    background: none;
+}
+
+.kontak .content-kontak .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    background-color: var(--bb);
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    background-color: var(--bb);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+}
+
+footer a{
+    font-size: 0.8rem;
+    color: #010101;
+    font-weight: 700;
+}
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu{
+        display: inline-block;
+    }
+
+    .Navbar .Navbar-list{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 30rem;
+        height: 100vh;
+        transform: 0.5s;
+    }
+    .Navbar .Navbar-list.active{
+        right: 0;
+    }
+
+    .Navbar .Navbar-list a{
+        color: #010101;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .about .content-about{
+        flex-wrap: wrap;
+    }
+    .about .content-about .about-content {
+        padding: 0; 
+    }
+
+
+    .product .content-product .card-product{
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .kontak .content-kontak{
+        flex-wrap: wrap;
+    }
+
+    .kontak .content-kontak .kontak-img img{
+    margin: 1rem 8rem;
+    }
+
+    .kontak .content-kontak .pesan{
+    padding: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 60%;
+    }
+    .product .content-product .card-product {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .about .content-about .about-content {
+    margin-top: 1rem;
+    }
+
+    .about .content-about .about-content p{
+        font-weight: 400;
+    }
+
+    .product .content-product .card-product .card-harga{
+        font-size: 1.2rem;
+    }
+}

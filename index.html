@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="styles/app.css">
+    <title>Coffee shop</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="Navbar">
+            <a href="#" class="Navbar-logo">Bean <span> & Brew. </span></a>
+            <div class="Navbar-list">
+                <a href="#home">Home </a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#product">Product</a>
+                <a href="#kontak">Contack Us</a>
+            </div>
+            <div class="Navbar-menu">
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Konten -->
+        <div  class="content-description" id="home">
+        <article class="content">
+            <h1>From Bean to Brew <span><br>Enjoy the Perfect Cup</span></h1>
+            <a href="#" class="Beli">Buy Now</a>
+        </article>
+        </div>
+
+        <!-- Tentang kami -->
+        <div id="about" class="about">
+            <h2><span>Tentang </span> Kami </h2>
+            <div class="content-about">
+            <article class="about-gambar">
+                <img src="img/kopi.jpg" alt="Tentang Kami">
+            </article>
+
+            <article class="about-content">
+                <h3>kenapa Cafe Kami?</h3>
+                <p>Bean and Brew adalah kafe kopi yang menghadirkan berbagai biji kopi terbaik dari seluruh dunia dan menyeduhnya dengan
+                teknik-teknik unggulan untuk memberikan pengalaman kopi yang tak terlupakan.</p>
+            </article>
+            </div>           
+        </div>
+
+        <!-- Product -->
+        <div id="product" class="product">
+            <h2>Product</h2>
+            <p>Temukan kenikmatan sejati dalam setiap cangkir kopi dan jelajahi dunia dengan rasa kopi terbaik dari kami.
+            </p>
+
+            <section class="content-product">
+                <article class="card-product">
+                    <img src="img/Esspresoo.jpg" alt="espreso" class="card-img">
+                    <h3 class="card-title"> Espresso </h3>
+                    <p class="card-harga"> RP 15.000 </p>
+                </article>
+                <article class="card-product">
+                    <img src="img/americano.jpg" alt="americano" class="card-img">
+                    <h3 class="card-title"> Americano </h3>
+                    <p class="card-harga"> RP 12.000 </p>
+                </article>
+                <article class="card-product">
+                    <img src="img/cappucino.jpg" alt="cappucino" class="card-img">
+                    <h3 class="card-title"> Cappucino </h3>
+                    <p class="card-harga"> RP 14.000 </p>
+                </article>
+                <article class="card-product">
+                    <img src="img/latte.jpg" alt="latte" class="card-img">
+                    <h3 class="card-title"> Latte </h3>
+                    <p class="card-harga"> RP 18.000 </p>
+                </article>
+                <article class="card-product">
+                    <img src="img/v60.jpg" alt="v60" class="card-img">
+                    <h3 class="card-title"> V60 </h3>
+                    <p class="card-harga"> RP 10.000 </p>
+                </article>
+                <article class="card-product">
+                    <img src="img/long black.jpg" alt="long black" class="card-img">
+                    <h3 class="card-title"> Long Black </h3>
+                    <p class="card-harga"> RP 8.000 </p>
+                </article>
+            </section>
+        </div>
+        
+        <!-- kontak kami -->
+        <aside id="kontak" class="kontak">
+            <h2>Contack Us</h2>
+            <p>Aapapun yang anda butuhkan, kami ada untuk membantu. Hubungi kami sekarang!
+            </p>
+            <section class="content-kontak">
+                <article class="kontak-img">
+                    <img src="img/A1.png" alt="A1">
+                </article>
+                <article class="pesan">
+                    <div class="input">
+                        <input type="text" placeholder="Masukkan Nama">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Maukkan Email">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Pesan">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="No hp">
+                    </div>
+                    <button type="submit" class="btn">Kirim pesanan</button>
+                </article>
+            </section>
+        </aside>
+    </main>
+    
+    <!-- footer -->
+    <footer>
+        <p>Created by <a href="">Pekz</a>. |&copy; 2024.</p>
+    </footer>
+
+    <!-- js -->
+<script>
+    feather.replace()
+</script>
+<script src="js/script.js">
+</script>
+</body>
+</html>
